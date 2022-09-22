@@ -1,0 +1,33 @@
+[http]
+    #proxy = http://proxy.tyo.sap.corp:8080
+[https]
+    #proxy = http://proxy.tyo.sap.corp:8080
+[user]
+	#email = brainocean@qq.com
+	#name = brainocean
+	email = bing.han@sap.com
+	name = Bing Han
+[push]
+	default = simple
+[core]
+	ignorecase = false
+	filemode = false
+	quotepath = false
+[color]
+	ui = auto
+[alias]
+  co = checkout
+  cob = checkout -b
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  sync = fetch origin master:master
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[github "github.wdf.sap.corp/api"]
+	user = i067908
+[init]
+	defaultBranch = main
